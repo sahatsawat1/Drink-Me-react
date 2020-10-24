@@ -1,7 +1,8 @@
 import React from 'react'
 import useScroll from '../../utils/useScroll'
 import { Link } from 'react-router-dom'
-import { Container, Wrapper, Logo, ActionContainer, Action, LoginContainer } from './styles'
+import Logo2 from '../../assets/logo2.png'
+import { Container, Wrapper, ActionContainer, Action, LoginContainer } from './styles'
 
 function Navbar () {
   const isScroll = useScroll({ scrollRange: 20 })
@@ -9,7 +10,7 @@ function Navbar () {
   return (
     <Container isScroll={isScroll}>
       <Wrapper>
-        <Logo>LOGO</Logo>
+        <img src={Logo2} />
         <ActionContainer>
           <Action>
             <Link to='/'>HOME</Link>
