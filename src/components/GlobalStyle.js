@@ -5,12 +5,13 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
 
   html, body, #root {
-    height: 100vh;
     width: 100vw;
     font-size: 16px;
     font-family: 'Roboto' , sans-serif;
     scroll-behavior: smooth;
     background-color: rgba(28, 29, 34, 1);
+    color: #DFCFAF;
+    overflow-x: hidden;
   }
   a{
     text-decoration: none;
