@@ -1,10 +1,8 @@
-
 import styled from 'styled-components'
 export const Container = styled.div`
   width: 100%;
   /* position: ${props => (props.isScroll ? 'fixed' : 'static')}; */
   position: fixed;
-  z-index: 10000;
   background-color: ${props => (props.isScroll ? 'rgba(28, 29, 34, 0.6)' : 'rgba(28, 29, 34, .9)')};
   color: ${props => (props.isScroll ? '#DFCFAF' : '#DFCFAF')};
   transition: background-color .5s;
@@ -15,11 +13,9 @@ export const Wrapper = styled.div`
   flex: 1;
   justify-content: center;
   align-items: center;
-`
-
-export const Logo = styled.div`
-  font-size: 24px;
-  font-weight: 900;
+  img{
+    width: 10%;
+  }
 `
 
 export const ActionContainer = styled.div`
