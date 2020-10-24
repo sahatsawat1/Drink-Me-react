@@ -1,44 +1,78 @@
 import React from 'react'
 import backgroundImage from '../assets/background.jpg'
-import BackgroundBlock from '../components/BackgroundBlock'
-import { Title, Subtitle } from '../components/Typography'
-import StoreCard from '../components/StoreCard'
+import StoreCard from '../components/StoreCard/index'
+import PromoCard from '../components/PromotionCard/index'
 import styled from 'styled-components'
-// const arr = new Array(1).fill('Hello World')
+import Footer from '../components/Footer'
 
-const Button = styled.button`
-  padding: 1rem 1.5rem;
-  background-color: transparent;
-  border: #fff solid 1px;
-  border-radius: 8px;
-  color: #fff;
-  margin: 1rem;
-  text-transform: uppercase;
-
-  cursor: pointer;
-    transition: background-color 0.3s;
-  
-    &:hover {
-      background-color: #fff;
-      color: #000;
-    }
-  
+const BackgroundBlock = styled.div`
+  height: 100vh;
+  img{
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 `
 
+const Wrapper = styled.div`
+  padding: 5% 4%;
+`
+
+const Hand = styled.div`
+  margin: 0 45%;
+  display: flex;
+  border-bottom: 4px solid #DFCFAF;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  p{
+    font-weight: 900;
+    font-size: 3rem;
+  }
+`
+
+const Content = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const PromoContent = styled.div`
+  display: flex;
+  justify-content: space-around;
+  padding: 3.1% 6.2%;
+`
 
 function Home () {
   return (
     <>
-      <BackgroundBlock src={backgroundImage}>
-        <Title>Hello World</Title>
-        <Subtitle>Lorem Ipsum</Subtitle>
-        <Button as='a' href='#content'>
-          Look Around
-        </Button>
+      <BackgroundBlock>
+        <img src={backgroundImage} />
       </BackgroundBlock>
-
-      <StoreCard />
-      
+      <Wrapper>
+        <Hand>
+          <p>STORE</p>
+        </Hand>
+        <Content>
+          <StoreCard />
+          <StoreCard />
+          <StoreCard />
+          <StoreCard />
+          <StoreCard />
+          <StoreCard />
+        </Content>
+      </Wrapper>
+      <Wrapper>
+        <Hand>
+          <p>PROMOTION</p>
+        </Hand>
+        <PromoContent>
+          <PromoCard />
+          <PromoCard />
+          <PromoCard />
+        </PromoContent>
+      </Wrapper>
+      <Footer />
     </>
   )
 }
