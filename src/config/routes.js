@@ -7,16 +7,26 @@ export default {
     component: lazy(() => import('../pages/Home'))
   },
   About: {
-    path: '/about',
-    component: lazy(() => import('../pages/About'))
+    path: '/bill',
+    component: lazy(() => import('../pages/Bill'))
   },
-  Contact: {
-    path: '/contact',
-    component: lazy(() => import('../pages/Contact'))
+  Table: {
+    path: '/table',
+    component: lazy(() => import('../pages/Table'))
+    
   },
-  Story: {
-    path: '/story',
-    component: lazy(() => import('../pages/Story'))
-
+  SignUp: {
+    path: '/signup',
+    component: lazy(() => import('../pages/SignUp'))
+    
+  },
+  Profile: {
+    path: '/profile',
+    component: lazy(() => import('../pages/Profile'))
+    
+  },
+  EditProfile: {
+    path: '/editprofile',
+    component: lazy(() => import('../pages/EditProfile'))
   }
 }
