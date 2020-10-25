@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 export const Container = styled.div`
   width: 100%;
   /* position: ${props => (props.isScroll ? 'fixed' : 'static')}; */
@@ -13,8 +14,11 @@ export const Wrapper = styled.div`
   flex: 1;
   justify-content: center;
   align-items: center;
-  img{
+  a{
     width: 10%;
+  }
+  img{
+    width: 100%;
   }
 `
 
