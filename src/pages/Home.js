@@ -72,7 +72,6 @@ function Home () {
           <PromoCard />
         </PromoContent>
       </Wrapper>
-      <Footer />
     </>
   )
 }
