@@ -3,7 +3,6 @@ import backgroundImage from '../assets/background.jpg'
 import StoreCard from '../components/StoreCard/index'
 import PromoCard from '../components/PromotionCard/index'
 import styled from 'styled-components'
-import Footer from '../components/Footer'
 
 const BackgroundBlock = styled.div`
   height: 100vh;
