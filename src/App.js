@@ -4,6 +4,7 @@ import routes from './config/routes'
 import withHelmet from './utils/withHelmet'
 import GlobalStyle from './components/GlobalStyle'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer/index'
 
 function App () {
   return (
@@ -17,6 +18,7 @@ function App () {
               <Route key={routeKey} {...routes[routeKey]} />
             ))}
           </Switch>
+          <Footer />
         </Suspense>
       </Router>
     </>
