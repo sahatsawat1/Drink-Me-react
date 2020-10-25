@@ -10,7 +10,9 @@ function Navbar () {
   return (
     <Container isScroll={isScroll}>
       <Wrapper>
-        <img src={Logo2} />
+        <Link to='/'>
+          <img src={Logo2} />
+        </Link>
         <ActionContainer>
           <Action>
             <Link to='/'>HOME</Link>
