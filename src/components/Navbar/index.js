@@ -16,15 +16,15 @@ function Navbar () {
             <Link to='/'>HOME</Link>
           </Action>
           <Action>
-            <Link to='/about'>TABLE</Link>
+            <Link to='/table'>TABLE</Link>
           </Action>
           <Action>
-            <Link to='/contact'>BILL</Link>
+            <Link to='/bill'>BILL</Link>
           </Action>
         </ActionContainer>
         <LoginContainer>
           <Action>
-            <Link to='/contact'>LOGIN</Link>
+            <Link to='/login'>LOGIN</Link>
           </Action>
         </LoginContainer>
       </Wrapper>
