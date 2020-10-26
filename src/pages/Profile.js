@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 import FormCard from '../components/Profile/index'
+import Button from '../components/Button'
 
 
 
 const Wrapper = styled.div`
   padding: 5% 5%;
 `
-
 const Hand = styled.div`
   margin: 0 30%;
   display: flex;
@@ -33,13 +33,15 @@ function SignUp () {
     <>
       <Wrapper>
         <Content>
-        <Hand>
-          <p>PROFILE</p>
-        </Hand>
+          <Hand>
+           <p>PROFILE</p>
+          </Hand>
         </Content>
-        <FormCard />
-      </Wrapper>
-      
+         <FormCard />
+        <Button>
+         EDIT
+        </Button>
+      </Wrapper>  
     </>
   )
 }
