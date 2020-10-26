@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
 import FormCard from '../components/FormCard/index'
-import Footer from '../components/Footer'
 import Button from '../components/Button'
 
 
@@ -21,7 +20,7 @@ const Hand = styled.div`
   }
 `
 const Content = styled.div`
-  padding: 2% 13%;
+  padding: 4% 13%;
   p{
     font-size: 30px;
     font-weight: 700;
@@ -35,7 +34,7 @@ function SignUp () {
       <Wrapper>
         <Content>
         <Hand>
-          <p>Sign Up</p>
+          <p>SIGN UP</p>
         </Hand>
         </Content>
         <FormCard />
