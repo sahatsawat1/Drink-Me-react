@@ -2,24 +2,18 @@ import React from 'react'
 import styled from 'styled-components'
 import FormCard from '../components/FormCard/index'
 import Button from '../components/Button'
+<<<<<<< HEAD
 import { Link } from 'react-router-dom'
 
+=======
+import Hand from '../components/Hand/index'
+>>>>>>> 20fcf5f2aea102bcca273525e58fef7ae75a696d
 
 
 const Wrapper = styled.div`
   padding: 5% 5%;
 `
-const Hand = styled.div`
-  margin: 0 30%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  p{
-    font-size: 40px;
-    font-weight: 900;
-  }
-`
+
 const Content = styled.div`
   padding: 4% 13%;
   p{
@@ -33,14 +27,19 @@ function SignUp () {
     <>
       <Wrapper>
         <Content>
-         <Hand>
-          <p>SIGN UP</p>
-         </Hand>
+        <Hand>
+          SIGN UP
+        </Hand>
         </Content>
+<<<<<<< HEAD
          <FormCard />
           <Button >
           <Link to='/Profile'>Sign Up</Link>
           </Button>
+=======
+        <FormCard />
+        <Button />
+>>>>>>> 20fcf5f2aea102bcca273525e58fef7ae75a696d
       </Wrapper>
       
     </>

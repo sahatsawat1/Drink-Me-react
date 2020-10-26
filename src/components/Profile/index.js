@@ -19,8 +19,7 @@ const ContentWrapper = styled.div`
 `
 const ContentAge = styled.div`
   width: 33%;
-  padding: 1% 10%; 
-  }
+  padding: 1% 10%;
   p{
     font-size: 16px;
     font-weight: 700;

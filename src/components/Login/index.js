@@ -120,8 +120,13 @@ function Login () {
 
               <DialogContentText>
                 Are you have account?{' '}
+<<<<<<< HEAD
                 <Link to="/register" onClick={handleClose} color="blue">
                   <BtnRgt><Link to='/SignUp'>register</Link></BtnRgt>
+=======
+                <Link to="/SignUp" onClick={handleClose} color="blue">
+                  <BtnRgt>register</BtnRgt>
+>>>>>>> 20fcf5f2aea102bcca273525e58fef7ae75a696d
                 </Link>
               </DialogContentText>
 

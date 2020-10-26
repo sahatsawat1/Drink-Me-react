@@ -4,7 +4,7 @@ export const Container = styled.div`
   width: 100%;
   /* position: ${props => (props.isScroll ? 'fixed' : 'static')}; */
   position: fixed;
-  background-color: ${props => (props.isScroll ? 'rgba(28, 29, 34, 0.6)' : 'rgba(28, 29, 34, .9)')};
+  background-color: ${props => (props.isScroll ? 'rgba(28, 29, 34, 1)' : 'rgba(28, 29, 34, 0.6)')};
   color: ${props => (props.isScroll ? '#DFCFAF' : '#DFCFAF')};
   transition: background-color .5s;
 `

@@ -3,9 +3,12 @@ import styled from 'styled-components'
 import FormCard from '../components/EditProfile/index'
 
 
+
+
 const Wrapper = styled.div`
   padding: 5% 5%;
 `
+
 const Hand = styled.div`
   margin: 0 30%;
   display: flex;
@@ -24,6 +27,7 @@ const Content = styled.div`
     font-weight: 700;
   }
 `
+
 
 function EditProfile () {
   return (
