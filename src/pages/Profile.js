@@ -2,12 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import FormCard from '../components/Profile/index'
 import Hand from '../components/Hand/index'
+import Button from '../components/Button'
+
 
 
 const Wrapper = styled.div`
   padding: 5% 5%;
 `
-
 const Content = styled.div`
   padding: 4% 13%;
   p{
@@ -25,9 +26,11 @@ function Profile () {
           PROFILE
         </Hand>
         </Content>
-        <FormCard />
-      </Wrapper>
-      
+         <FormCard />
+        <Button>
+         EDIT
+        </Button>
+      </Wrapper>  
     </>
   )
 }

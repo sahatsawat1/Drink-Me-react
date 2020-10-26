@@ -15,7 +15,7 @@ const ButtonSubmit = styled.button`
 const Buttoncancel = styled.button`
       margin: 2%;
       text-decoration: none;
-      background-color: #ddd;
+      background-color:#C0C0C0;
       border: 1px solid #1C1D22;
       border-radius: 7px;
       padding: 10px 20px;
@@ -34,7 +34,6 @@ const ContentDetail = styled.div`
     font-size: 70%;
     color: black;
     outline: none;
-    
   }
   p{
     font-size: 16px;
@@ -56,21 +55,17 @@ const Content = styled.div`
     font-size: 70%;
     color:#DFCFAF;
     outline: none;
-  
   }
   p{
     font-size: 16px;
     font-weight: 700;
   }
 `
-
 const ContentWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   outline: none;
-  
 `
-
 const ContentAge = styled.div`
   padding: 1% 5%;
   input{
@@ -81,8 +76,7 @@ const ContentAge = styled.div`
     border-bottom: 1.5px solid #DFCFAF;
     font-size: 70%;
     color: #DFCFAF;
-    outline: none;
-    
+    outline: none;  
   }
   p{
     font-size: 16px;
@@ -97,51 +91,50 @@ const Button = styled.div`
   align-items: center;
 `
 
-
 function Input() {
   return (
     <Wrapper>
-
       <ContentWrapper>
         <Content>
           <p>Fullname</p> 
-          <input placeholder="Fristname  Lastname" />
+           <input placeholder="Fristname  Lastname" />
         </Content>
         <Content>
           <p>Phone Number</p> 
-          <input placeholder="Please enter your number" />
+           <input placeholder="Please enter your number" />
         </Content>
       </ContentWrapper>
 
       <ContentAge>
         <p>Age</p> 
-        <input placeholder="Enter your Age"/>
+         <input placeholder="Enter your Age"/>
       </ContentAge>
 
       <ContentDetail>
         <p>Username</p> 
-        <input placeholder="Username" />
+         <input placeholder="Username" />
       </ContentDetail>
 
       <ContentWrapper>
         <Content>
           <p>Password</p> 
-        <input type="password" placeholder="Password" />
+           <input type="password" placeholder="Password" />
         </Content>
         <Content>
           <p>Confirm Password</p> 
         <input type="password"placeholder="Confirm Password"   />
         </Content>
       </ContentWrapper>
+
     <Button>
           <ButtonSubmit>
             Submit
           </ButtonSubmit>
-
           <Buttoncancel>
             Cancel
           </Buttoncancel>
     </Button>   
+
     </Wrapper>	
   );
 }

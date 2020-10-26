@@ -21,11 +21,11 @@ const Content = styled.div`
 
 `
 
-function Button () {
+function Button (props) {
   return (
     <Card>
       <Content>
-        <button>Sign Up</button>
+        <button>{props.children}</button>
       </Content>
     </Card>
   )
