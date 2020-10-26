@@ -1,5 +1,6 @@
 import React from "react"
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
 
 const ButtonSubmit = styled.button`
       margin: 2%;
@@ -128,10 +129,10 @@ function Input() {
 
     <Button>
           <ButtonSubmit>
-            Submit
+          <Link to='/Profile'>Submit</Link>
           </ButtonSubmit>
           <Buttoncancel>
-            Cancel
+          <Link to='/Profile'>Cancel</Link>
           </Buttoncancel>
     </Button>   
 
