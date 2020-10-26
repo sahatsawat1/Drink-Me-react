@@ -7,7 +7,6 @@ import Button from '../components/Button'
 const Wrapper = styled.div`
   padding: 5% 5%;
 `
-
 const Hand = styled.div`
   margin: 0 30%;
   display: flex;
@@ -27,18 +26,19 @@ const Content = styled.div`
   }
 `
 
-
 function SignUp () {
   return (
     <>
       <Wrapper>
         <Content>
-        <Hand>
+         <Hand>
           <p>SIGN UP</p>
-        </Hand>
+         </Hand>
         </Content>
-        <FormCard />
-        <Button />
+         <FormCard />
+          <Button>
+           Sign Up
+          </Button>
       </Wrapper>
       
     </>
