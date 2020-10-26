@@ -2,6 +2,7 @@ import React from 'react'
 import backgroundImage from '../assets/background.jpg'
 import StoreCard from '../components/StoreCard/index'
 import PromoCard from '../components/PromotionCard/index'
+import Hand from '../components/Hand/index'
 import styled from 'styled-components'
 
 const BackgroundBlock = styled.div`
@@ -16,19 +17,6 @@ const BackgroundBlock = styled.div`
 
 const Wrapper = styled.div`
   padding: 5% 4%;
-`
-
-const Hand = styled.div`
-  margin: 0 45%;
-  display: flex;
-  border-bottom: 4px solid #DFCFAF;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  p{
-    font-weight: 900;
-    font-size: 3rem;
-  }
 `
 
 const Content = styled.div`
@@ -50,7 +38,7 @@ function Home () {
       </BackgroundBlock>
       <Wrapper>
         <Hand>
-          <p>STORE</p>
+          STORE
         </Hand>
         <Content>
           <StoreCard />
@@ -63,7 +51,7 @@ function Home () {
       </Wrapper>
       <Wrapper>
         <Hand>
-          <p>PROMOTION</p>
+          PROMOTION
         </Hand>
         <PromoContent>
           <PromoCard />
