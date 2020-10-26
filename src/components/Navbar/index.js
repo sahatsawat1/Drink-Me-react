@@ -2,6 +2,7 @@ import React from 'react'
 import useScroll from '../../utils/useScroll'
 import { Link } from 'react-router-dom'
 import Logo2 from '../../assets/logo2.png'
+import Login from '../Login/index'
 import { Container, Wrapper, ActionContainer, Action, LoginContainer } from './styles'
 
 function Navbar () {
@@ -26,7 +27,7 @@ function Navbar () {
         </ActionContainer>
         <LoginContainer>
           <Action>
-            <Link to='/login'>LOGIN</Link>
+            <Login />
           </Action>
         </LoginContainer>
       </Wrapper>
