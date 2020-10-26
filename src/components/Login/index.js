@@ -121,7 +121,7 @@ function Login () {
               <DialogContentText>
                 Are you have account?{' '}
                 <Link to="/register" onClick={handleClose} color="blue">
-                  <BtnRgt>register</BtnRgt>
+                  <BtnRgt><Link to='/SignUp'>register</Link></BtnRgt>
                 </Link>
               </DialogContentText>
 
