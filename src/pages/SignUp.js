@@ -2,6 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import FormCard from '../components/FormCard/index'
 import Button from '../components/Button'
+import { Link } from 'react-router-dom'
+
 
 
 const Wrapper = styled.div`
@@ -36,8 +38,8 @@ function SignUp () {
          </Hand>
         </Content>
          <FormCard />
-          <Button>
-           Sign Up
+          <Button >
+          <Link to='/Profile'>Sign Up</Link>
           </Button>
       </Wrapper>
       
