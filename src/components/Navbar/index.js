@@ -21,9 +21,6 @@ function Navbar () {
           <Action>
             <Link to='/table'>TABLE</Link>
           </Action>
-          <Action>
-            <Link to='/bill'>BILL</Link>
-          </Action>
         </ActionContainer>
         <LoginContainer>
           <Action>
