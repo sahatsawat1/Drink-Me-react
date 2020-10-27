@@ -2,7 +2,7 @@ import React from 'react'
 import backgroundImage from '../assets/background.jpg'
 import StoreCard from '../components/StoreCard/index'
 import PromoCard from '../components/PromotionCard/index'
-import Hand from '../components/Hand/index'
+import Hand from '../components/Hander/index'
 import styled from 'styled-components'
 
 const BackgroundBlock = styled.div`
