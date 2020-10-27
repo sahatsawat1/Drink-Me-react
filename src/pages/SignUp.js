@@ -8,7 +8,6 @@ import Hand from '../components/Hand/index'
 const Wrapper = styled.div`
   padding: 5% 5%;
 `
-
 const Content = styled.div`
   padding: 4% 13%;
   p{
@@ -26,8 +25,10 @@ function SignUp () {
           SIGN UP
         </Hand>
         </Content>
-        <FormCard />
-        <Button />
+         <FormCard />
+          <Button>
+           Sign Up
+          </Button>
       </Wrapper>
       
     </>
