@@ -6,10 +6,6 @@ export default {
     exact: true,
     component: lazy(() => import('../pages/Home'))
   },
-  Bill: {
-    path: '/bill',
-    component: lazy(() => import('../pages/Bill'))
-  },
   Table: {
     path: '/table',
     component: lazy(() => import('../pages/Table'))
