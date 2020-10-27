@@ -5,11 +5,13 @@ import withHelmet from './utils/withHelmet'
 import GlobalStyle from './components/GlobalStyle'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer/index'
+import Provider from './contexts/OrderContext'
 
 function App () {
   return (
     <>
       <GlobalStyle />
+      <Provider>
       <Router>
         <Suspense fallback='...loading'>
           <Navbar />
@@ -20,7 +22,7 @@ function App () {
           </Switch>
           <Footer />
         </Suspense>
-      </Router>
+      </Router></Provider>
     </>
   )
 }
