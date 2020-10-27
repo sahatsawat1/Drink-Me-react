@@ -110,9 +110,11 @@ function Login () {
             <Context>
 
               <DialogActions>
-                <Button onClick={handleClose} color="primary">
-                  Login
-                </Button>
+                <Link to="/">
+                  <Button onClick={handleClose} color="primary">
+                    Login
+                  </Button>
+                </Link>
               </DialogActions>
 
               <DialogContentText>
