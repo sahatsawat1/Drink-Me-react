@@ -35,7 +35,7 @@ function EditProfile () {
       <Wrapper>
         <Content>
         <Hand>
-          <p>PROFILE</p>
+          <p>EDIT PROFILE</p>
         </Hand>
         </Content>
         <FormCard />
