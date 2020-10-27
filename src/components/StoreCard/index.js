@@ -14,7 +14,9 @@ function StoreCard () {
           <div className="content">
             <h1>STORE NAME</h1>
             <p>6:00PM - 12:00PM</p>
+          <Link to='/Table'>
             <button>ORDER</button>
+          </Link>
           </div>
         </Card>
       </CardWrapper>
