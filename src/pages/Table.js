@@ -79,8 +79,6 @@ function Table () {
           {state.box9}
         </TableCard>
 
-        <button onClick={() => ( state.box1 === 'ว่าง' ? setState({...state,box1 : 'ไม่ว่าง'}) : setState({...state,box1 : 'ว่าง'}) )}></button>
-
       </TableWrapper>
 
     </React.Fragment>
