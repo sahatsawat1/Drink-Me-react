@@ -6,7 +6,7 @@ export default {
     exact: true,
     component: lazy(() => import('../pages/Home'))
   },
-  About: {
+  Bill: {
     path: '/bill',
     component: lazy(() => import('../pages/Bill'))
   },
