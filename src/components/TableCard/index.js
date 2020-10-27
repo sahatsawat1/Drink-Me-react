@@ -15,7 +15,6 @@ const Container = styled.div`
 const CardWrapper = styled.div`
   border-radius: 12px;
   padding: 20% 0;
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,13 +22,15 @@ const CardWrapper = styled.div`
   color: ${props => (props.color === 'ว่าง' ? 'rgba(0, 174, 29, 1)' : 'rgba(242, 153, 74, 1)')};
   border-color: ${props => (props.color === 'ว่าง' ? 'rgba(0, 174, 29, 1)' : 'rgba(242, 153, 74, 1)')};
   border: 8px solid;
+  &:hover{
+    background-color: ${props => (props.color === 'ว่าง' ? 'rgba(77, 242, 74, 1)' : 'rgba(242, 153, 74, 1)')};
+    color: #fff;
+    border-color: ${props => (props.color === 'ว่าง' ? 'rgba(0, 174, 29, 1)' : 'rgba(242, 153, 74, 1)')};
+  }
 `
 
 const Card = styled.div`
   display: flex;
-  position: absolute;
-  top: 12px;
-  right: 12px;
   p{
     font-size: 24px;
   }
