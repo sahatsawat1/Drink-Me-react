@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import FormCard from '../components/Profile/index'
 import Hand from '../components/Hand/index'
 import Button from '../components/Button'
+import { Link } from 'react-router-dom'
 
 
 
@@ -28,7 +29,7 @@ function Profile () {
         </Content>
          <FormCard />
         <Button>
-         EDIT
+        <Link to='/EditProfile'>EDIT</Link>
         </Button>
       </Wrapper>  
     </>
