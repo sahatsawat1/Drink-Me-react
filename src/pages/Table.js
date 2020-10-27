@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useContext, useEffect } from 'react'
 import styled from 'styled-components'
-import TableCard from '../components/TableCard/index'
+import TableCard from '../components/OrderCard'
+import Hand from '../components/Hand/index'
+import { UsableOrderContext } from '../contexts/OrderContext'
 
 const FakeNav = styled.div`
   width: 100%;
@@ -10,70 +12,77 @@ const FakeNav = styled.div`
 const TableWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  padding: 8%;
+  padding: 0% 8%;
+`
+const Content = styled.div`
+  p{
+    font-size: 30px;
+    font-weight: 700;
+  }
+`
+
+const Status = styled.div`
+
+`
+
+export const Action = styled.li`
+  list-style-type: none;
 `
 
 function Table () {
-
-  const [ em , setEm ] = 
-    useState({ 
-      box1: 'ว่าง',
-      box2: 'ว่าง',
-      box3: 'ว่าง',
-      box4: 'ว่าง',
-      box5: 'ว่าง',
-      box6: 'ว่าง',
-      box7: 'ว่าง',
-      box8: 'ว่าง',
-      box9: 'ว่าง',
-    })
+  const { state, setState} = useContext(UsableOrderContext);
+    
 
   return (
     <React.Fragment>
 
       <FakeNav />
 
+      <Content>
+        <Hand>
+          Table
+        </Hand>
+      </Content>
+
+      <Status>
+
+      </Status>
+
       <TableWrapper>
 
-        <TableCard Em={em.box1}>
-          {em.box1}
+        <TableCard state={state.box1}>
+          {state.box1}
         </TableCard>
 
-        <TableCard Em={em.box2}>
-          {em.box2}
+        <TableCard state={state.box2}>
+          {state.box2}
+        </TableCard>
+        <TableCard state={state.box3}>
+          {state.box3}
+        </TableCard>
+        <TableCard state={state.box4}>
+          {state.box4}
+        </TableCard>
+        <TableCard state={state.box5}>
+          {state.box5}
+        </TableCard>
+        <TableCard state={state.box6}>
+          {state.box6}
+        </TableCard>
+        <TableCard state={state.box7}>
+          {state.box7}
+        </TableCard>
+        <TableCard state={state.box8}>
+          {state.box8}
+        </TableCard>
+        <TableCard state={state.box9}>
+          {state.box9}
         </TableCard>
 
-        <TableCard Em={em.box3}>
-          {em.box3}
-        </TableCard>
-
-        <TableCard Em={em.box4}>
-          {em.box4}
-        </TableCard>
-
-        <TableCard Em={em.box5}>
-          {em.box5}
-        </TableCard>
-
-        <TableCard Em={em.box6}>
-          {em.box6}
-        </TableCard>
-
-        <TableCard Em={em.box7}>
-          {em.box7}
-        </TableCard>
-
-        <TableCard Em={em.box8}>
-          {em.box8}
-        </TableCard>
-
-        <TableCard Em={em.box9}>
-          {em.box9}
-        </TableCard>
-
-        <button onClick={() => ( em.box1 === 'ว่าง' ? setEm({...em,box1 : 'ไม่ว่าง'}) : setEm({...em,box1 : 'ว่าง'}) )}></button>
+        <button onClick={() => ( state.box1 === 'ว่าง' ? setState({...state,box1 : 'ไม่ว่าง'}) : setState({...state,box1 : 'ว่าง'}) )}></button>
 
       </TableWrapper>
+
     </React.Fragment>
   )
 }
