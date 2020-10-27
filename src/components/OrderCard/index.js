@@ -100,6 +100,8 @@ export default function TransitionsModal(props) {
             <p id="transition-modal-description">react-transition-group animates me.</p>
           </div>
 
+          <button onClick={() => ( state.box1 === 'ว่าง' ? setState({...state,box1 : 'ไม่ว่าง'}) : setState({...state,box1 : 'ว่าง'}) )}></button>
+          
         </Fade>
 
       </Modal>
