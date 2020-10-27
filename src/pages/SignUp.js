@@ -31,7 +31,9 @@ function SignUp () {
         <FormCard />
 
         <Button>
-           Sign Up
+          <Link to='/Profile'>
+            Sign Up
+           </Link>
         </Button>
 
       </Wrapper>
